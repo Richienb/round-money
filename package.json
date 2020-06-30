@@ -1,6 +1,6 @@
 {
 	"name": "round-money",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Appropriately round amounts of money.",
 	"repository": "https://github.com/Richienb/round-money.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
