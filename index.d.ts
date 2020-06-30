@@ -1,15 +1,17 @@
 /**
-My awesome module.
-@param input Lorem ipsum.
-@param postfix Lorem ipsum.
+Appropriately round amounts of money.
+@param amount The amount to round.
 @example
 ```
-const theModule = require("the-module");
+const roundMoney = require("round-money");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+roundMoney(1.234);
+//=> 12.34
+
+roundMoney(12.345);
+//=> 12.35
 ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string
+declare function roundMoney(amount: number): number
 
-export = theModule
+export = roundMoney

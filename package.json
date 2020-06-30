@@ -1,8 +1,8 @@
 {
-	"name": "the-module",
+	"name": "round-money",
 	"version": "0.0.0",
-	"description": "My awesome module.",
-	"repository": "https://github.com/Richienb/the-module.git",
+	"description": "Appropriately round amounts of money.",
+	"repository": "https://github.com/Richienb/round-money.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
 	"main": "index.js",
@@ -17,8 +17,16 @@
 		"lint": "xo",
 		"test": "xo && ava"
 	},
-	"keywords": [],
-	"dependencies": {},
+	"keywords": [
+		"number",
+		"math",
+		"round",
+		"money",
+		"decimal"
+	],
+	"dependencies": {
+		"round-to": "^4.1.0"
+	},
 	"devDependencies": {
 		"ava": "^3.9.0",
 		"eslint-config-richienb": "^0.4.2",

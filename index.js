@@ -1,9 +1,11 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-	if (typeof input !== "string") {
-		throw new TypeError(`Expected a string, got ${typeof input}`)
+const roundTo = require("round-to")
+
+module.exports = amount => {
+	if (typeof amount !== "number" && !Number.isNaN(amount)) {
+		throw new TypeError(`Expected a number, got ${amount}`)
 	}
 
-	return `${input} & ${postfix}`
+	return roundTo(amount, 2)
 }

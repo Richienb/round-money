@@ -1,41 +1,33 @@
-# the-module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# round-money [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/round-money/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/round-money)
 
-My awesome module.
+Appropriately round amounts of money.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/round-money.png)](https://npmjs.com/package/round-money)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install round-money
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const roundMoney = require("round-money");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+roundMoney(1.234);
+//=> 12.34
+
+roundMoney(12.345);
+//=> 12.35
 ```
 
 ## API
 
-### theModule(input, options?)
+### roundMoney(amount)
 
-#### input
+#### amount
 
-Type: `string`
+Type: `number`
 
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The amount to round.
